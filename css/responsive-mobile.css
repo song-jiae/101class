@@ -1,0 +1,345 @@
+/* Import Local SCSS Files */
+/* font Family */
+/* Text Color*/
+/* Object Color*/
+@import url("https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/static/woff2/SUIT.css");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+input {
+  border: none;
+}
+
+li {
+  padding: 0;
+  list-style: none;
+}
+
+/* Bootstrap icons */
+/* Web fonts*/
+/* responsive Mobile */
+@media (max-width: 767px) {
+  body {
+    background: rgb(243, 130, 130);
+  }
+  /* ############ Common CSS ############*/
+  section:not(.front-slider) {
+    padding: 35px 0;
+  }
+  [class*=inner] {
+    width: 90%;
+    margin: auto;
+  }
+  .front-header h2 {
+    font-size: 20px;
+    padding-left: 5px;
+  }
+  /* ############ Header ############*/
+  header .header-inner {
+    width: 100%;
+    padding: 0 10px;
+  }
+  header .header-inner .logo-search .logo img {
+    width: 100px;
+  }
+  header .header-inner .logo-search .search {
+    display: none;
+  }
+  header .header-inner .logo-search .login-register-buttons button {
+    font-size: 13px;
+    padding: 5px;
+  }
+  header .header-inner .gnb .trigger span {
+    display: none;
+  }
+  header .header-inner .gnb .trigger::before {
+    background: url(../images/icon-category-search.png);
+    width: 20px;
+    height: 18px;
+  }
+  header .header-inner .gnb .special-nav {
+    white-space: nowrap;
+    overflow-y: hidden;
+  }
+  header .header-inner .gnb a:first-child::after {
+    display: none;
+  }
+  header .mega-navi {
+    display: block;
+    position: fixed;
+    left: -300px;
+    top: 0;
+    width: 300px;
+    height: 100vh;
+    max-height: 100vh !important;
+    padding-top: 60px;
+  }
+  header .mega-navi .search-mobile {
+    display: block;
+    width: 230px;
+    margin: auto;
+  }
+  header .mega-navi .mega-navi-inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  header .mega-navi .mega-navi-inner .mega-navi-item:last-child b {
+    border: none;
+  }
+  header .mega-navi .mega-navi-inner .mega-navi-item b {
+    font-size: 1.1rem;
+    padding: 1rem;
+    display: block;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+  }
+  header .mega-navi .mega-navi-inner .mega-navi-item .mega-navi-item-wrap {
+    padding: 10px 15px;
+    display: none;
+  }
+  header .mega-navi .btn-mega-navi-close {
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 2rem;
+  }
+  /* ############ section : front-slider ############*/
+  /* ############ section : category-shortcut ############*/
+  /* ############ section : swiper mySwiper02 ############*/
+  /* ############ section : best-class  ############*/
+  /* ############ section : early-bird  ############*/
+  /* ############ section : blog   ############*/
+  /* ############ section : slogan   ############*/
+  /* ############ section : tip-tech  ############*/
+  /* ############ footer-include  ############*/
+  /* ############ front-event-banner  ############*/
+}
+@media (max-width: 767px) and (max-width: 767px) {
+  .front-slider {
+    border: 1px solid #000;
+  }
+  .front-slider .front-slider-items .front-slider-item .front-slider-item-wrap {
+    width: 100%;
+    height: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .front-slider .front-slider-items .front-slider-item .front-slider-item-wrap .desc {
+    width: 100%;
+    text-align: center;
+  }
+  .front-slider .front-slider-items .front-slider-item .front-slider-item-wrap .desc b {
+    font-size: 16px;
+  }
+  .front-slider .front-slider-items .front-slider-item .front-slider-item-wrap .desc h2 {
+    font-size: 20px;
+    margin: 15px 0;
+    width: 50%;
+    margin: auto;
+  }
+  .front-slider .front-slider-items .front-slider-item .front-slider-item-wrap .pic {
+    width: 300px;
+  }
+}
+@media (max-width: 767px) {
+  .category-shortcut .category-shortcut-inner .category-shortcut-items {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .category-shortcut .category-shortcut-inner .category-shortcut-items .category-shortcut-item {
+    padding: 20px 0;
+    height: auto;
+    -ms-flex-preferred-size: 25%;
+        flex-basis: 25%;
+  }
+  .category-shortcut .category-shortcut-inner .category-shortcut-items .category-shortcut-item span {
+    font-size: 14px;
+  }
+  .best-class .best-class-inner .best-class-content .items-outer .best-class-items {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .best-class .best-class-inner .best-class-content .best-class-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .best-class .best-class-inner .best-class-content .best-class-wrap .best-class-items-outer .best-class-items {
+    gap: 10px;
+  }
+  .best-class .best-class-inner .best-class-content .best-class-wrap .best-class-items-outer .best-class-items .best-class-item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .best-class .best-class-inner .best-class-content .best-class-wrap .best-class-items-outer .best-class-items .best-class-item .thumb {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    width: auto;
+    height: 130px;
+    overflow: hidden;
+  }
+  .best-class .best-class-inner .best-class-content .best-class-wrap .best-class-items-outer .best-class-items .best-class-item .thumb img {
+    width: 100%;
+    height: 130px;
+  }
+  .best-class .best-class-inner .best-class-content .best-class-wrap .best-class-items-outer .best-class-items .best-class-item .overview h4 {
+    font-size: 12px;
+  }
+  .best-class .best-class-inner .best-class-content .best-class-wrap .best-class-items-outer .best-class-items .best-class-item .overview .class-info {
+    font-size: 12px;
+  }
+  .best-class .best-class-inner .best-class-content .best-class-wrap .best-class-banner {
+    display: none;
+  }
+  .best-class .best-class-inner .best-class-content .best-class-wrap .best-class-banner-tablet {
+    display: block;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .best-class .best-class-inner .best-class-content .best-class-wrap .best-class-banner-tablet img {
+    width: 100%;
+  }
+  .early-bird .early-bird-inner .early-bird-content .early-bird-banner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    text-align: center;
+  }
+  .early-bird .early-bird-inner .early-bird-content .early-bird-banner .banner-about h2 {
+    font-size: 20px;
+  }
+  .early-bird .early-bird-inner .early-bird-content .early-bird-banner .banner-about .hash-tag {
+    font-size: 16px;
+  }
+  .blog .blog-inner .blog-content .blog-items {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .blog .blog-inner .blog-content .blog-items .blog-item {
+    margin-bottom: 10px;
+  }
+  .slogan {
+    padding: 20px !important;
+  }
+  .slogan .slogan-inner .slogan-content h2 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  .slogan .slogan-inner .slogan-content p {
+    font-size: 0.9rem;
+    width: 60%;
+    margin: auto;
+  }
+  .tip-tech .tip-tech-inner .tip-tech-content .tip-tech-wrap .tip-tech-items {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .tip-tech .tip-tech-inner .tip-tech-content .tip-tech-wrap .tip-tech-items .tip-tech-item {
+    padding: 20px;
+  }
+  .tip-tech .tip-tech-inner .tip-tech-content .tip-tech-wrap .tip-tech-items .tip-tech-item .thumb {
+    display: none;
+  }
+  footer {
+    padding: 30px 0;
+  }
+  footer .footer-inner {
+    padding: 0 20px;
+  }
+  footer .footer-inner .lnb-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 50px;
+    border: none;
+  }
+  footer .footer-inner .lnb-wrap .footer-slogan h3 {
+    font-weight: 600;
+    font-size: 1.3rem;
+    text-align: center;
+  }
+  footer .footer-inner .lnb-wrap .lnb {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer .footer-inner .lnb-wrap .lnb .link-item .link-item-title {
+    border-bottom: 1px solid #777;
+    padding: 10px 0;
+    font-size: 1rem;
+    pointer-events: all;
+  }
+  footer .footer-inner .lnb-wrap .lnb .link-item .link-item-content {
+    display: none;
+  }
+  footer .footer-inner .lnb-wrap .lnb .link-item .link-item-content a {
+    display: block;
+  }
+  footer .footer-inner .lnb-wrap .lnb .link-item .link-item-content a:hover {
+    text-decoration: underline;
+  }
+  footer .footer-inner .copyright-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    padding-top: 10px;
+  }
+  footer .footer-inner .copyright-wrap .company-info-trigger {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+  footer .footer-inner .copyright-wrap address {
+    display: none;
+  }
+  footer .footer-inner .copyright-wrap address p:last-child {
+    margin-top: 20px;
+  }
+  footer .footer-inner .copyright-wrap .sns {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    margin-top: 10px;
+  }
+}

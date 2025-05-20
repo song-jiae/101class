@@ -1,0 +1,162 @@
+@charset "UTF-8";
+/* Import Local SCSS Files */
+/* font Family */
+/* Text Color*/
+/* Object Color*/
+@import url("https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/static/woff2/SUIT.css");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+input {
+  border: none;
+}
+
+li {
+  padding: 0;
+  list-style: none;
+}
+
+/* Bootstrap icons */
+/* Web fonts*/
+/* responsive Tablet */
+@media (min-width: 768px) and (max-width: 1024px) {
+  body {
+    background: rgb(250, 216, 66);
+  }
+  /* ############ Common CSS ############*/
+  section:not(.front-slider) {
+    padding: 35px 0;
+  }
+  [class*=inner] {
+    width: 90%;
+    margin: auto;
+  }
+  /* ############ Header ############*/
+  header .header-inner {
+    padding: 0 10px;
+  }
+  header .header-inner .search {
+    width: 300px;
+  }
+  header .mega-navi .mega-navi-inner {
+    width: 100%;
+    padding: 10px 20px;
+  }
+  header .mega-navi .mega-navi-inner b {
+    font-size: 0.9rem;
+  }
+  header .mega-navi .mega-navi-inner .mega-navi-item {
+    font-size: 13px;
+  }
+  /* ############ section : front-slider ############*/
+  /* ############ section : category-shortcut ############*/
+  /* ############ section : swiper mySwiper02 ############*/
+  /* ############ section : best-class  ############*/
+  /* ############ section : early-bird  테블릿 적용 x############*/
+  /* ############ section : blog   ############*/
+  /* ############ section : slogan   ############*/
+  /* ############ section : tip-tech  ############*/
+  /* ############ footer-include  ############*/
+  /* ############ front-event-banner  ############*/
+}
+@media (min-width: 768px) and (max-width: 1024px) and (min-width: 768px) and (max-width: 1024px) {
+  .front-slider {
+    border: 1px solid #000;
+  }
+  .front-slider .front-slider-items .front-slider-item .front-slider-item-wrap {
+    width: 100%;
+    height: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .front-slider .front-slider-items .front-slider-item .front-slider-item-wrap .desc {
+    width: 100%;
+    text-align: center;
+  }
+  .front-slider .front-slider-items .front-slider-item .front-slider-item-wrap .desc b {
+    font-size: 16px;
+  }
+  .front-slider .front-slider-items .front-slider-item .front-slider-item-wrap .desc h2 {
+    font-size: 24px;
+    margin: 15px 0;
+    width: 50%;
+    margin: auto;
+  }
+  .front-slider .front-slider-items .front-slider-item .front-slider-item-wrap .pic {
+    width: 300px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .category-shortcut .category-shortcut-inner .category-shortcut-items {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .category-shortcut .category-shortcut-inner .category-shortcut-items .category-shortcut-item {
+    padding: 20px 0;
+    height: auto;
+    -ms-flex-preferred-size: 25%;
+        flex-basis: 25%;
+  }
+  .category-shortcut .category-shortcut-inner .category-shortcut-items .category-shortcut-item span {
+    font-size: 15px;
+  }
+  .best-class .best-class-inner .best-class-content .best-class-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .best-class .best-class-inner .best-class-content .best-class-wrap .best-class-banner {
+    display: none;
+  }
+  .best-class .best-class-inner .best-class-content .best-class-wrap .best-class-banner-tablet {
+    display: block;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .best-class .best-class-inner .best-class-content .best-class-wrap .best-class-banner-tablet img {
+    width: 100%;
+  }
+  .blog .blog-inner .blog-content .blog-items .blog-item .thumb {
+    height: 160px;
+  }
+  .slogan {
+    padding: 25px !important;
+  }
+  .tip-tech .tip-tech-inner .tip-tech-content .tip-tech-wrap .tip-tech-items .tip-tech-item .thumb {
+    display: none;
+  }
+  footer {
+    padding: 30px 20px;
+  }
+  footer .footer-inner .lnb-wrap {
+    gap: 40px;
+  }
+  footer .footer-inner .lnb-wrap .footer-slogan h3 {
+    font-size: 1.2rem;
+  }
+  footer .footer-inner .copyright-wrap address {
+    width: 65%;
+  }
+}

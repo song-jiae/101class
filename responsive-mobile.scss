@@ -1,0 +1,286 @@
+/* Import Local SCSS Files */
+@import 'variables', 'reset', 'fonts';
+
+/* responsive Mobile */
+@media (max-width:767px){
+  body{background: rgb(243, 130, 130);}
+  /* ############ Common CSS ############*/
+  section:not(.front-slider){ padding: 35px 0;}
+  [class*=inner]{ width:90%;margin: auto; }
+  .front-header{
+    h2{
+      font-size: 20px; padding-left: 5px;
+    }
+  }
+
+  /* ############ Header ############*/
+  header{
+    .header-inner{
+      width: 100%; padding: 0 10px;
+      .logo-search{
+        .logo{
+          img{width: 100px;}
+        }
+        .search{
+          display: none;
+        }
+        .login-register-buttons{
+          button{
+            font-size: 13px; padding: 5px;
+          }
+        }
+      }
+      .gnb{
+        .trigger{
+          // transform: translateY(8px);
+          span{display: none;}
+          &::before{
+            background: url(../images/icon-category-search.png);
+            width: 20px; height: 18px;
+          }
+        }
+        .special-nav{
+          white-space: nowrap;
+          overflow-y: hidden;
+        }
+        a:first-child::after{ display: none;}
+      }
+    }
+    .mega-navi{
+      display: block;
+      position: fixed;
+      left: -300px; top: 0;
+      width: 300px;
+      height: 100vh; max-height: 100vh !important;
+      padding-top: 60px;
+      .search-mobile{
+        display: block;
+        width: 230px; margin: auto;
+      }
+      .mega-navi-inner{
+        flex-direction: column;
+        .mega-navi-item{
+          &:last-child b{
+            border: none;
+          }
+          b{
+            font-size: 1.1rem; padding: 1rem;
+            display: block;
+            border-bottom: 1px solid $dim-gray; cursor: pointer;
+          }
+          .mega-navi-item-wrap{
+            padding: 10px 15px; display: none;
+          }
+        }
+      }
+      .btn-mega-navi-close{
+        display: block;
+        position: absolute;
+        top: 10px; left: 10px; color: $white; cursor: pointer; font-size: 2rem;
+      }
+    }
+  }
+  /* ############ section : front-slider ############*/
+  @media (max-width:767px){
+    .front-slider{
+      border: 1px solid #000;
+      .front-slider-items{
+        .front-slider-item{
+          .front-slider-item-wrap{
+            width: 100%; height:auto;
+            flex-direction: column;
+            .desc{
+              width: 100%;
+              text-align: center;
+              b{font-size: 16px;}
+              h2{font-size: 20px; margin: 15px 0; width: 50%; margin: auto;}
+              span{}
+            }
+            .pic{ 
+              width: 300px;
+              img{ }
+            }
+          }
+        }
+      }
+    }
+  }
+  /* ############ section : category-shortcut ############*/
+  .category-shortcut{
+    .category-shortcut-inner{
+      .category-shortcut-items{
+        flex-wrap: wrap;
+        .category-shortcut-item{ 
+          padding: 20px 0; height: auto;
+          flex-basis: 25%;
+          span{font-size: 14px;}
+        }
+      }
+    }
+  }
+  /* ############ section : swiper mySwiper02 ############*/
+  /* ############ section : best-class  ############*/
+  .best-class{
+    .best-class-inner{
+      .best-class-content{
+        .items-outer{
+          .best-class-items{
+            flex-direction: column;
+            .best-class-item{
+              .thumb{
+                img{}
+              }
+              .overview{}
+            }
+          }
+        }
+        .best-class-wrap{
+          .best-class-items-outer{
+            .best-class-items{
+              gap: 10px;
+              .best-class-item{
+                flex-direction: column;
+                .thumb{
+                  flex: 1; width: auto;
+                  height: 130px; overflow: hidden;
+                  img{width: 100%; height: 130px; }
+                }
+                .overview{
+                  h4{font-size: 12px;}
+                  .class-info{font-size: 12px;}
+                }
+              }
+            }
+          }
+          flex-direction: column;
+          .best-class-banner{
+            display: none;
+            img{}
+          }
+          .best-class-banner-tablet{
+            display: block; border-radius: 10px; overflow: hidden;
+            img{
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+  /* ############ section : early-bird  ############*/
+  .early-bird{
+    .early-bird-inner{
+      .early-bird-content{
+        .early-bird-banner{
+          flex-direction: column-reverse;
+          text-align: center;
+          .banner-about{
+            h2{font-size: 20px;}
+            .hash-tag{font-size: 16px;}
+          }
+        }
+      }
+    }
+  }
+  /* ############ section : blog   ############*/
+  .blog{
+    .blog-inner{
+      .blog-content{
+        .blog-items{
+          flex-direction: column;
+          .blog-item{
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+  }
+  /* ############ section : slogan   ############*/
+  .slogan{
+    padding: 20px !important;
+    .slogan-inner{
+      .slogan-content{
+        h2{font-size: 1.4rem; font-weight: 600; margin-bottom: 1rem;}
+        p{
+          font-size: 0.9rem; width: 60%; margin: auto;
+        }
+      }
+    }
+  }
+  /* ############ section : tip-tech  ############*/
+  .tip-tech{
+    .tip-tech-inner{
+      .tip-tech-content{
+        .tip-tech-wrap{
+          .tip-tech-items{
+            flex-direction: column;
+            .tip-tech-item{
+              padding: 20px;
+              .thumb{display: none;}
+            }
+          }
+        }
+      }
+    }
+  }
+  /* ############ footer-include  ############*/
+  footer{
+    padding: 30px 0;
+    .footer-inner{
+      padding:0 20px;
+      .lnb-wrap{
+        flex-direction: column;
+        gap: 50px;
+        border: none;
+        .footer-slogan{
+          h3{
+            font-weight: 600;
+            font-size: 1.3rem;
+            text-align: center;
+          }
+        }
+        .lnb{
+          flex-direction: column;
+          .link-item{
+            .link-item-title{
+              border-bottom: 1px solid $silver-black;
+              padding: 10px 0;
+              font-size: 1.0rem;
+              pointer-events: all;
+            }
+            .link-item-content{
+              display: none;
+              a{
+                display: block;
+                &:hover{
+                  text-decoration: underline;
+                }
+              }
+            }
+          }
+        }
+      }
+      .copyright-wrap{
+        flex-direction: column;
+        text-align: center;
+        padding-top: 10px;
+        .company-info-trigger{
+          display: block;
+          font-size: 1.2rem;
+          font-weight: 500;
+        }
+        address{
+          display: none;
+          p:last-child{
+            margin-top: 20px;
+          }
+        }
+        .sns{
+          transform: translateY(0);
+          margin-top: 10px;
+      }
+    }
+    }
+  }
+  /* ############ front-event-banner  ############*/
+}
