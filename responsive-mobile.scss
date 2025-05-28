@@ -3,7 +3,7 @@
 
 /* responsive Mobile */
 @media (max-width:767px){
-  body{background: rgb(243, 130, 130);}
+  
   /* ############ Common CSS ############*/
   section:not(.front-slider){ padding: 35px 0;}
   [class*=inner]{ width:90%;margin: auto; }
@@ -83,7 +83,6 @@
   /* ############ section : front-slider ############*/
   @media (max-width:767px){
     .front-slider{
-      border: 1px solid #000;
       .front-slider-items{
         .front-slider-item{
           .front-slider-item-wrap{
@@ -283,4 +282,131 @@
     }
   }
   /* ############ front-event-banner  ############*/
+
+/* 서브페이지 */
+  /* ############ category-main.html############*/
+  .category-class {
+    .category-class-inner {
+      .category-class-wrap {
+        .focus-class-items {
+          .focus-class-item {
+            width: calc(100% / 2 - 20px) !important;
+          }
+        }
+      }
+      .category-class-detail{
+        .category-shortcut-btn-group{
+          overflow-x: scroll;
+          .btn-shortcut{
+            font-size: 12px;
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+  /* ############ Take Course & Cart : take-course.html ############ */
+
+  .take-course {
+    padding: 0 !important;
+    .take-course-inner {
+      flex-direction: column;
+      gap: 0;
+      > div {
+        background-color: $white;
+        border-radius: 0;
+        box-shadow: none;
+        padding: 20px;
+      }
+      .cart-wrap {
+        .cart-items {
+          .cart-item {
+            .thum {
+              width: 60px;
+            }
+            .cart-overview {
+              .cart-overview-detail {
+                flex-direction: column;
+                gap: 0;
+                .cart-overview-price {
+                  text-align: left;
+                  > * {
+                    display: inline-block;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .payment {
+        border-top: 1px dashed $dim-gray;
+      }
+    }
+  }
+/* ############ class-detail.html############*/
+.class-detail-image{
+  border: 1px solid #000;
+  padding: 0 !important;
+  background: url('../images/ct-class-detail-main-01.png') no-repeat center center;
+  background-size: cover;
+  .class-detail-image-inner{
+    flex-direction: column;
+    height: auto;
+    padding-top: 30px;
+    text-align: center;
+    .deading{
+      h2{display: none;}
+      p{font-size: 25px; width: 80%; margin: auto;}
+    }
+    .cover-image{
+      img{
+        width: 80%;
+        height: auto;
+      }
+    }
+  }
+}
+.class-detail-full{
+  padding: 0;
+  .class-detail-full-inner{
+    .class-detail-full-contnet{
+      flex-direction: column-reverse;
+      >div{
+        background: $white;
+        border-radius: 0; box-shadow: 0;
+        padding: 10px ;
+      }
+      img{width: 100%;}
+      .class-detail-info{
+        .class-detail-navigation{
+          overflow-y: hidden; gap: 10px;
+          a{
+            font-size: 14px; white-space: nowrap;
+          }
+        }
+        .class-introduce{
+          .class-detail-wrap{
+            .sub-wrap{
+              img{border: 1px solid #000;}
+            }
+          }
+        }
+        .class-reivew{
+          .class-detail-wrap{
+            .review-group{
+              flex-direction: column;
+            }
+          }
+        }
+        .class-mentor{
+          .class-detail-wrap{
+            flex-direction: column;
+          } 
+        }
+      }
+    }
+  }
+}
+  
 }

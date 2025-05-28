@@ -127,3 +127,46 @@ hideBtn.addEventListener('click', function(){
 closeBtn.addEventListener('click', function(){
   banner.style.display = 'none'
 })
+
+/*  */
+function startCountdown(durationInSeconds){
+  //durationInSeconds 전체타이머시간 (초)
+  let timer = durationInSeconds;
+  //선택
+  let hour1 = document.getElementById('hour1');
+  let hour2 = document.getElementById('hour2');
+  let minute1 = document.getElementById('minute1');
+  let minute2 = document.getElementById('minute2');
+  let second1 = document.getElementById('second1');
+  let second2 = document.getElementById('second2');
+  let interval = setInterval(()=>{
+    /* 시간 
+    Math.floor(2.9) > 2
+    1시간 3600초 > 전체시간을 3600으로 나누면 시
+    */
+    let hours =  Math.floor(timer / 3600);
+    /* 분  timer % 3600 1시간 단위를 제외한 나머지 초
+    그것을 60으로 나누면 분
+    */
+    let minutes =  Math.floor((timer % 3600) / 60);
+    /* 초 */
+    let seconds = timer % 60;
+    /*  각 값을 문자열로 변환 두자리로 맞춤 */
+    let [h1, h2 ] = String(hours).padStart(2, '0').split("");
+    let [m1, m2 ] = String(minutes).padStart(2, '0').split("");
+    let [s1, s2 ] = String(seconds).padStart(2, '0').split("");
+
+    hour1.textContent = h1;
+    hour2.textContent = h2;
+    minute1.textContent = m1;
+    minute2.textContent = m2;
+    second1.textContent = s1;
+    second2.textContent = s2;
+    if(timer > 0){
+      timer--;
+    }else{
+      clearInterval(interval);
+    }
+  },1000)
+}
+startCountdown(28230)

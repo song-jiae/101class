@@ -3,7 +3,9 @@
 
 /* responsive Tablet */
 @media (min-width: 768px) and (max-width:1024px) {
-  body{background: rgb(250, 216, 66);}
+  body {
+  }
+
   /* ############ Common CSS ############*/
   section:not(.front-slider) {
     padding: 35px 0;
@@ -15,40 +17,56 @@
   }
 
   /* ############ Header ############*/
-  header{
-    .header-inner{
-      padding: 0 10px; 
-      .search{width: 300px;}
+  header {
+    .header-inner {
+      padding: 0 10px;
+
+      .search {
+        width: 300px;
+      }
     }
-    .mega-navi{
-      .mega-navi-inner{
-        width: 100%; padding: 10px 20px;
-        b{
+
+    .mega-navi {
+      .mega-navi-inner {
+        width: 100%;
+        padding: 10px 20px;
+
+        b {
           font-size: 0.9rem;
         }
-        .mega-navi-item{
+
+        .mega-navi-item {
           font-size: 13px;
         }
       }
     }
   }
+
   /* ############ section : front-slider ############*/
   @media (min-width: 768px) and (max-width:1024px) {
-    .front-slider{
-      border: 1px solid #000;
-      .front-slider-items{
-        .front-slider-item{
-          .front-slider-item-wrap{
-            width: 100%; height:auto;
+    .front-slider {
+      padding-top: 50px;
+      .front-slider-items {
+        .front-slider-item {
+          .front-slider-item-wrap {
+            width: 100%;
+            height: auto;
             flex-direction: column;
-            .desc{
+            .desc {
               width: 100%;
               text-align: center;
-              b{font-size: 16px;}
-              h2{font-size: 24px; margin: 15px 0; width: 50%; margin: auto;}
-              span{}
+              b {font-size: 16px; margin-top: 150px;}
+              h2 {
+                font-size: 24px;
+                margin: 15px 0;
+                width: 50%;
+                margin: auto;
+              }
+
+              span {}
             }
-            .pic{ 
+
+            .pic {
               width: 300px;
             }
           }
@@ -56,33 +74,46 @@
       }
     }
   }
+
   /* ############ section : category-shortcut ############*/
-  .category-shortcut{
-    .category-shortcut-inner{
-      .category-shortcut-items{
+  .category-shortcut {
+    .category-shortcut-inner {
+      .category-shortcut-items {
         flex-wrap: wrap;
-        .category-shortcut-item{ 
-          padding: 20px 0; height: auto;
+
+        .category-shortcut-item {
+          padding: 20px 0;
+          height: auto;
           flex-basis: 25%;
-          span{font-size: 15px;}
+
+          span {
+            font-size: 15px;
+          }
         }
       }
     }
   }
+
   /* ############ section : swiper mySwiper02 ############*/
   /* ############ section : best-class  ############*/
-  .best-class{
-    .best-class-inner{
-      .best-class-content{
-        .best-class-wrap{
+  .best-class {
+    .best-class-inner {
+      .best-class-content {
+        .best-class-wrap {
           flex-direction: column-reverse;
-          .best-class-banner{
+
+          .best-class-banner {
             display: none;
-            img{}
+
+            img {}
           }
-          .best-class-banner-tablet{
-            display: block; border-radius: 10px; overflow: hidden;
-            img{
+
+          .best-class-banner-tablet {
+            display: block;
+            border-radius: 10px;
+            overflow: hidden;
+
+            img {
               width: 100%;
             }
           }
@@ -90,15 +121,16 @@
       }
     }
   }
+
   /* ############ section : early-bird  테블릿 적용 x############*/
- 
+
   /* ############ section : blog   ############*/
-  .blog{
-    .blog-inner{
-      .blog-content{
-        .blog-items{
-          .blog-item{
-            .thumb{
+  .blog {
+    .blog-inner {
+      .blog-content {
+        .blog-items {
+          .blog-item {
+            .thumb {
               height: 160px;
             }
           }
@@ -106,40 +138,114 @@
       }
     }
   }
+
   /* ############ section : slogan   ############*/
-  .slogan{ padding: 25px !important;}
+  .slogan {
+    padding: 25px !important;
+  }
+
   /* ############ section : tip-tech  ############*/
-  .tip-tech{
-    .tip-tech-inner{
-      .tip-tech-content{
-        .tip-tech-wrap{
-          .tip-tech-items{
-            .tip-tech-item{
-              .thumb{display: none;}
+  .tip-tech {
+    .tip-tech-inner {
+      .tip-tech-content {
+        .tip-tech-wrap {
+          .tip-tech-items {
+            .tip-tech-item {
+              .thumb {
+                display: none;
+              }
             }
           }
         }
       }
     }
   }
+
   /* ############ footer-include  ############*/
-  footer{
+  footer {
     padding: 30px 20px;
-    .footer-inner{
-      .lnb-wrap{
+
+    .footer-inner {
+      .lnb-wrap {
         gap: 40px;
-        .footer-slogan{
-          h3{
+
+        .footer-slogan {
+          h3 {
             font-size: 1.2rem;
           }
         }
       }
-      .copyright-wrap{
-        address{
+
+      .copyright-wrap {
+        address {
           width: 65%;
         }
       }
     }
   }
+
   /* ############ front-event-banner  ############*/
+  /* 서브페이지 */
+  /* ############ category-main.html############*/
+  .category-class {
+    .category-class-inner {
+      .category-class-wrap {
+        .focus-class-items {
+          .focus-class-item {
+            width: calc(100% / 2 - 20px) !important;
+          }
+        }
+      }
+    }
+  }
+   /* ############ Take Course & Cart : take-course.html ############ */
+
+   .take-course {
+    .take-course-inner {
+      flex-direction: column;
+    }
+  }
+  /* ############ class-detail.html############*/
+.class-detail-image{
+  border: 1px solid #000;
+  padding: 0 !important;
+  background: url('../images/ct-class-detail-main-01.png') no-repeat center center;
+  background-size: cover;
+  .class-detail-image-inner{
+    height: 300px;
+    padding: 30px 0;
+    .deading{
+      h2{font-size: 24px;}
+      p{font-size: 16px;}
+    }
+    .cover-image{
+      img{
+        height: 250px;
+      }
+    }
+  }
+}
+.class-detail-full{
+  .class-detail-full-inner{
+    .class-detail-full-contnet{
+      flex-direction: column-reverse;
+      .class-detail-info {
+        /* Article : class-introduce  */
+        /* Article : class-mentor  */
+        .class-mentor{
+          .class-detail-wrap{
+            .mentor-profile-summary{
+              .mentor-class-button{
+                btn-mentor-profile{padding: 3px 10px;}
+              }
+            }
+          }
+        }
+      }
+      .class-detail-sidebar {
+        position: static; margin-bottom: 20px;
+      }
+    }
+  }
+}
 }

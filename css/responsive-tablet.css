@@ -37,11 +37,14 @@ li {
 
 /* Bootstrap icons */
 /* Web fonts*/
+@font-face {
+  font-family: "SpoqaHanSansNeo-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
 /* responsive Tablet */
 @media (min-width: 768px) and (max-width: 1024px) {
-  body {
-    background: rgb(250, 216, 66);
-  }
   /* ############ Common CSS ############*/
   section:not(.front-slider) {
     padding: 35px 0;
@@ -77,10 +80,14 @@ li {
   /* ############ section : tip-tech  ############*/
   /* ############ footer-include  ############*/
   /* ############ front-event-banner  ############*/
+  /* 서브페이지 */
+  /* ############ category-main.html############*/
+  /* ############ Take Course & Cart : take-course.html ############ */
+  /* ############ class-detail.html############*/
 }
 @media (min-width: 768px) and (max-width: 1024px) and (min-width: 768px) and (max-width: 1024px) {
   .front-slider {
-    border: 1px solid #000;
+    padding-top: 50px;
   }
   .front-slider .front-slider-items .front-slider-item .front-slider-item-wrap {
     width: 100%;
@@ -96,6 +103,7 @@ li {
   }
   .front-slider .front-slider-items .front-slider-item .front-slider-item-wrap .desc b {
     font-size: 16px;
+    margin-top: 150px;
   }
   .front-slider .front-slider-items .front-slider-item .front-slider-item-wrap .desc h2 {
     font-size: 24px;
@@ -158,5 +166,50 @@ li {
   }
   footer .footer-inner .copyright-wrap address {
     width: 65%;
+  }
+  .category-class .category-class-inner .category-class-wrap .focus-class-items .focus-class-item {
+    width: calc(50% - 20px) !important;
+  }
+  .take-course .take-course-inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .class-detail-image {
+    border: 1px solid #000;
+    padding: 0 !important;
+    background: url("../images/ct-class-detail-main-01.png") no-repeat center center;
+    background-size: cover;
+  }
+  .class-detail-image .class-detail-image-inner {
+    height: 300px;
+    padding: 30px 0;
+  }
+  .class-detail-image .class-detail-image-inner .deading h2 {
+    font-size: 24px;
+  }
+  .class-detail-image .class-detail-image-inner .deading p {
+    font-size: 16px;
+  }
+  .class-detail-image .class-detail-image-inner .cover-image img {
+    height: 250px;
+  }
+  .class-detail-full .class-detail-full-inner .class-detail-full-contnet {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .class-detail-full .class-detail-full-inner .class-detail-full-contnet .class-detail-info {
+    /* Article : class-introduce  */
+    /* Article : class-mentor  */
+  }
+  .class-detail-full .class-detail-full-inner .class-detail-full-contnet .class-detail-info .class-mentor .class-detail-wrap .mentor-profile-summary .mentor-class-button btn-mentor-profile {
+    padding: 3px 10px;
+  }
+  .class-detail-full .class-detail-full-inner .class-detail-full-contnet .class-detail-sidebar {
+    position: static;
+    margin-bottom: 20px;
   }
 }

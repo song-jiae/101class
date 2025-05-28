@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../images/favicon.png">
   <title>트랜드 그 이상의 클래스, 클래스101</title>
   <!-- swiper-bundle -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
@@ -16,14 +17,35 @@
 </head>
 <body>
   <!-- Login Modal -->
-  <div class="login-modal" id="loginModal">
-    <div class="modal-overlay"></div>
-    <div class="modal-content">
-      <h2>로그인</h2>
-      <input type="text" placeholder="아이디 입력" id="loginId">
-      <input type="password" placeholder="비밀번호 입력" id="loginPw">
-      <button id="loginSubmit">로그인</button>
-      <button class="modal-close">닫기</button>
+  <div class="member-login-overlay" id="loginModal">
+    <div class="member-login">
+      <div class="member-account">
+        <h1 class="login-slogan">나를 성장시키는 배움,<br><em>클래스101</em>에서 시작하세요.</h1> 
+      </div>
+      <div class="login-field">
+        <div>
+          <input type="email" placeholder="이메일">
+        </div>
+        <div>
+          <input type="password" placeholder="비밀번호" maxlength="12">
+          <i class="toggle-pw bi bi-eye-slash"></i>
+        </div>
+        <button class="btn-member-primary" id="loginSubmit">로그인</button>
+      </div>
+      <div class="join-member">
+        클래스101가 처음이신가요? <a href="/html/member-register.html">간편 회원가입</a>
+      </div>
+      <div class="easy-login">
+        <a href="#none" class="btn-easy-login kakao">카카오로 시작하기</a>
+        <a href="#none" class="btn-easy-login facebook">페이스북으로 시작하기</a>
+        <a href="#none" class="btn-easy-login apple">Apple로 시작하기</a>
+        <span class="or">또는</span>
+        <a href="#none" class="btn-easy-login email">이메일 계정으로 시작하기</a>
+      </div>
+      <p class="login-notice">
+        처음 로그인하면 클래스101의 이용약관 및 개인정보처리방침에 동의한 것으로 간주합니다.
+      </p>
+      <button class="btn-modal-close">&times;</button>
     </div>
   </div>
   <!-- Event Banner -->
@@ -80,7 +102,7 @@
               <b>EVENT</b>
               <h2>11월 신규회원 할인혜택!
                 무료 클래스부터 얼리버드 할인까지</h2>
-              <span>2022.11.1~11.30</span>
+              <span>2022.11"/html/.1~11.30</span>
             </div>
             <div class="pic">
               <img src="images/ct-front-03.png" alt="">
@@ -93,27 +115,27 @@
     <section class="category-shortcut">
       <div class="category-shortcut-inner">
         <div class="category-shortcut-items">
-          <a href="html/category-main.html" class="category-shortcut-item">
+          <a href="../html/category-main.html" class="category-shortcut-item">
             <em><i class="bi bi-calendar-event"></i></em>
             <span>진행 중인 이벤트</span>
           </a>
-          <a href="html/category-main.html" class="category-shortcut-item">
+          <a href="../html/category-main.htm" class="category-shortcut-item">
             <em><i class="bi bi-code"></i></em>
             <span>개발·프로그래밍</span>
           </a>
-          <a href="html/category-main.html" class="category-shortcut-item">
+          <a href="../html/category-main.html" class="category-shortcut-item">
             <em><i class="bi bi-graph-up-arrow"></i></em>
             <span>운동·건강</span>
           </a>
-          <a href="html/category-main.html" class="category-shortcut-item">
+          <a href="../html/category-main.html" class="category-shortcut-item">
             <em><i class="bi bi-spellcheck"></i></em>
             <span>학문·외국어</span>
           </a>
-          <a href="html/category-main.html" class="category-shortcut-item">
+          <a href="../html/category-main.html" class="category-shortcut-item">
             <em><i class="bi bi-cup-hot"></i></em>
             <span>라이프스타일</span>
           </a>
-          <a href="html/category-main.html" class="category-shortcut-item">
+          <a href="../html/category-main.html" class="category-shortcut-item">
             <em><i class="bi bi-three-dots"></i></em>
             <span>더 보기</span>
           </a>
@@ -687,7 +709,16 @@
       <div class="early-bird-inner">
         <div class="early-bird-content">
           <div class="countdown-wrap">
-            <img src="images/temp-countdown.PNG" alt="">
+            <div id="early-bird-countdown">
+              <div class="box" id="hour1">0</div>
+              <div class="box" id="hour2">0</div>
+              <div class="colon">:</div>
+              <div class="box" id="minute1">0</div>
+              <div class="box" id="minute2">0</div>
+              <div class="colon">:</div>
+              <div class="box" id="second1">0</div>
+              <div class="box" id="second2">0</div>
+            </div>
           </div>
           <div class="early-bird-banner">
             <div class="banner-about">
@@ -899,9 +930,6 @@
     <!-- footer-include -->
     <div class="footer-include"></div> 
   </div>
-
-
-
 
   <!-- swiper.js -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
