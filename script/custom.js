@@ -57,10 +57,13 @@ fetch('/101class/include/header.html')
   })
   /* 닫기 버튼 누르면 모달창 닫기 */
   document.addEventListener('click', function(e){
-    if(e.target.classList.contains('modal-close')){
-      loginModal.style.display='none'
-    }
-  })
+  if (
+    e.target.classList.contains('modal-close') || 
+    e.target.classList.contains('modal-overlay')
+  ) {
+    loginModal.style.display = 'none';
+  }
+});
   /* 모달안에 로그인 버튼 클릭시 유저알람 보이게 */
   document.addEventListener('click', function(e){
     if(e.target.id==='loginSubmit'){
@@ -169,4 +172,5 @@ function startCountdown(durationInSeconds){
     }
   },1000)
 }
-startCountdown(28230)
+startCountdown(28230);
+
