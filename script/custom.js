@@ -55,8 +55,8 @@ fetch('/101class/include/header.html')
   loginBtn.addEventListener('click', function(){
     loginModal.style.display = 'flex';
   })
-  /* 닫기 버튼 누르면 모달창 닫기 */
-  document.addEventListener('click', function(e){
+/* 닫기 버튼 누르면 모달창 닫기 */
+document.addEventListener('click', function(e){
   if (
     e.target.classList.contains('modal-close') || 
     e.target.classList.contains('modal-overlay')
@@ -64,6 +64,16 @@ fetch('/101class/include/header.html')
     loginModal.style.display = 'none';
   }
 });
+
+/* member-login-overlay용 닫기 버튼 처리 */
+document.addEventListener('click', function(e){
+  if (e.target.classList.contains('btn-modal-close')) {
+    let overlay = document.querySelector('.member-login-overlay');
+    if (overlay) {
+      overlay.style.display = 'none';
+    }
+  }
+})
   /* 모달안에 로그인 버튼 클릭시 유저알람 보이게 */
   document.addEventListener('click', function(e){
     if(e.target.id==='loginSubmit'){
